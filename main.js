@@ -34,8 +34,8 @@ function gotPoses(results)
   if(results.length > 0)
   {
 	console.log(results);
-	scoreLeftWrist=results[0].pose.keyPoints[9].score;
-	scoreRightWrist=results[0].pose.keyPoints[10].score;
+	scoreLeftWrist=results[0].pose.keypoints[9].score;
+	scoreRightWrist=results[0].pose.keypoints[10].score;
 	
 	rightWristX = results[0].pose.rightWrist.x;
 	rightWristY = results[0].pose.rightWrist.y;
